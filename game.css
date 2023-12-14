@@ -1,0 +1,109 @@
+body {
+  background: lightblue;
+}
+
+.login_div1,
+.login_div2 {
+  background: white;
+  padding: 10px;
+  float: none;
+  border-radius: 15px;
+}
+
+#player1_Name,
+#player2_Name {
+  display: inline-block;
+  margin-left: 20px;
+}
+#word {
+  width: 60%;
+}
+#wordDisplay {
+  letter-spacing: 5px;
+}
+#output {
+  background: white;
+  border-radius: 10px;
+  border-top: 10px solid #aa4465;
+  padding: 10px;
+  float: none;
+  text-align: left;
+}
+.Iniciar{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Rubik",sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  color: black;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: yellow;
+  border: 2px solid black;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms
+  cubic-bezier(0,0,0.58,1),
+  background 150ms cubic-bezier(0,0,0.58,1);
+}
+.Iniciar:hover{
+  background: rgb(255, 255, 90);
+  transform: translate(0,0.25em);
+}
+.Iniciar:active{
+  background: rgb(255, 255, 90);
+  transform: translate(0,0.75em);
+}
+.Iniciar::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: rgb(255, 255, 160);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px rgb(199, 199, 122),
+  0 0.625em 0 0 rgb(134, 134, 67);
+  transform: translate3d(0,0.75em,-1em);
+  transition: transform 150ms
+  cubic-bezier(0,0,0.58,1),box-shadow 150ms
+  cubic-bezier(0,0,0.58,1);
+}
+.Iniciar:hover::before{
+  box-shadow: 0 0 0 2px rgb(199, 199, 122),
+  0 0.5em 0 0 rgb(134, 134, 67);
+  transform: translate3d(0,0.5em,-1em);
+}
+.Iniciar:active::before{
+  box-shadow: 0 0 0 2px rgb(199, 199, 122),
+   0 0 rgb(134, 134, 67);
+  transform: translate3d(0,0,-1em);
+}
+
+.Enviar{
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: black;
+  background: red;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 8px 15px rgba(94, 63, 63, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+.Enviar:hover{
+  background-color: blue;
+  box-shadow: 0 15px 20px rgba(63, 64, 94, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+.Enviar:active{
+  transform: translateY(-1px);
+}
